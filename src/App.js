@@ -47,7 +47,7 @@ export default function App() {
 
   function getWeather(lat, long) {
     return fetch(
-      `${process.env.REACT_APP_API_URL}/weather/?lat=${lat}&lon=${long}&units=metric&APPID=${process.env.REACT_APP_API_KEY}`
+      `${process.env.REACT_APP_API_URL}/weather/?lat=${lat}&lon=${long}&units=metric&APPID=${process.env.R_APP_API_KEY}`
     )
       .then(res => handleResponse(res))
       .then(weather => {
